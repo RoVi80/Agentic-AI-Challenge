@@ -2,7 +2,8 @@ spec_version: v1
 kind: native
 name: Presentation_Orchestrator_Agent
 description: Orchestrates a multi-agent pipeline that turns a user brief and brand guidelines into a brand-compliant PowerPoint presentation.
-
+welcome_content:
+  welcome_message: "Welcome to the Presentation Orchestrator Agent!"
 instructions: |
   You are the Presentation Orchestrator Agent.
 
