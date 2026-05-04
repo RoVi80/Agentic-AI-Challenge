@@ -2,7 +2,13 @@ import subprocess
 import json
 from pathlib import Path
 
+from ibm_watsonx_orchestrate.agent_builder.tools import tool
 
+
+@tool(
+    name="render_presentation_python_wrapped",
+    description="Render a presentation using a Node.js script and return it as a file artifact."
+)
 def render_presentation_python_wrapped(input_json: dict):
     script_path = Path(__file__).parent / "render_janine_6.js"
 

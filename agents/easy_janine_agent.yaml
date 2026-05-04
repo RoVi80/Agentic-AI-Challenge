@@ -5,7 +5,7 @@ llm: groq/openai/gpt-oss-120b
 style: default
 description: An agent that extracts brand guidelines from PDFs and generates PowerPoint presentations using a rendering tool.
 welcome_content:
-  welcome_message: Hello! I can extract brand colors from your PDF corporate guidelines and generate a PowerPoint presentation.
+  welcome_message: Hello! I'm a presentation generation agent.
 instructions: |
   Brand Asset Extraction + Presentation Generation Agent
 
