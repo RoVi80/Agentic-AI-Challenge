@@ -179,6 +179,40 @@ function createServer() {
     }
   );
 
+  // Tool 6: generates a branded PPTX from a presentation brief and brand guidelines
+  server.registerTool(
+    "generate_presentation",
+    {
+      description: "Generates a branded PowerPoint presentation from a presentation brief and brand guidelines. Returns the file as base64.",
+      inputSchema: {
+        json: z.object({}).passthrough(),
+        output_filename: z.string().default("presentation.pptx"),
+      },
+    },
+    async ({ json, output_filename }) => {
+      const suffix = Date.now();
+      const inputPath = writeTmp(`giovanni_input_${suffix}.json`, json);
+      const outputPath = join(tmpdir(), `${suffix}_${output_filename}`);
+
+      const result = runScript(join(SCRIPTS_DIR, "render_giovanni.js"), [inputPath, outputPath]);
+      unlinkSync(inputPath);
+
+      if (!result.success) {
+        return { content: [{ type: "text", text: result.stderr }], isError: true };
+      }
+
+      const base64 = readFileSync(outputPath).toString("base64");
+      unlinkSync(outputPath);
+
+      return {
+        content: [
+          { type: "text", text: `Presentation generated successfully. Filename: ${output_filename}` },
+          { type: "text", text: base64 }
+        ]
+      };
+    }
+  );
+
   return server;
 }
 
