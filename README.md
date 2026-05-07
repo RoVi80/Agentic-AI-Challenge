@@ -18,8 +18,6 @@ Three capabilities, each exposed through its own agent:
 | [siro_simple_agent_2](agents/siro_simple_agent_2.yaml) | Extracts an existing PowerPoint's content and re-renders it in a clean, brand-consistent style |
 | [sarinas_format_agent](agents/sarinas_format_agent.yaml) | Analyzes a PowerPoint and reports its formatting (colors, fonts, fills, borders, layout) |
 
-All three target the same use case: **consultants who already have content, but don't want to spend time formatting it to corporate guidelines.**
-
 ---
 
 ## Architecture
