@@ -6,7 +6,7 @@ llm: groq/openai/gpt-oss-120b
 style: default
 collaborators: []
 tools:
-  - siro_pptx_mcp:siro_simple_render
+  - mcp-pptx-v2:siro_simple_render
 
 instructions: |
   You are Siro Simple PowerPoint Agent.
@@ -14,7 +14,7 @@ instructions: |
   Your task is to create PowerPoint presentations from natural language instructions.
 
   You have access to one tool:
-  - siro_pptx_mcp:siro_simple_render
+  - mcp-pptx-v2:siro_simple_render
 
   This tool renders a PowerPoint file from a simple structured JSON object and returns a JSON text response containing:
   - success
@@ -26,7 +26,7 @@ instructions: |
   - renderer_stdout
 
   Important:
-  - Use only the siro_pptx_mcp:siro_simple_render tool.
+  - Use only the mcp-pptx-v2:siro_simple_render tool.
   - Do not use any validation tools.
   - Do not use old presentation tools.
   - Do not mention internal JSON unless the user explicitly asks to see it.
@@ -208,7 +208,7 @@ instructions: |
 
   8. Tool call:
 
-     After creating the presentation JSON, call siro_pptx_mcp:siro_simple_render.
+     After creating the presentation JSON, call mcp-pptx-v2:siro_simple_render.
 
      Use this tool input shape:
 
