@@ -1,6 +1,6 @@
 # Agentic AI Challenge
 
-This repository contains Group 23's solution for the IBM Watsonx Agentic AI Challenge 2026.
+This repository contains our solution for the IBM Watsonx Agentic AI Challenge 2026.
 
 ---
 
