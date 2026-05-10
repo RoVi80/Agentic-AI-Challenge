@@ -1,0 +1,62 @@
+{
+  "title": "Cloud Migration Strategy",
+  "subtitle": "Q3 readiness review",
+  "settings": {
+    "fontFace": "Arial",
+    "titleColor": "24135F",
+    "bodyColor": "1D1D1D",
+    "backgroundColor": "FFFFFF",
+    "accentColor": "D0006F",
+    "footerText": "Internal — Cloud Strategy Group"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "Cloud Migration Strategy",
+      "subtitle": "Q3 readiness review for the leadership team"
+    },
+    {
+      "type": "bullets",
+      "title": "Why now",
+      "bullets": [
+        "Our on-premise contract renewal is in 9 months and the renewal will cost approximately 2.3 million dollars per year",
+        "We have observed a significant increase in latency complaints from customers in the EU region in the last two quarters",
+        "The competitive landscape has shifted and most of our peers have already moved to cloud-first architectures"
+      ]
+    },
+    {
+      "type": "two_column",
+      "title": "Current state versus target state",
+      "leftTitle": "Current state",
+      "leftBullets": [
+        "On-premise data centers in three locations across Europe and North America",
+        "Manual deployment via legacy CI scripts that the team wrote in 2019",
+        "Approximately 14 person quarters per year on infrastructure maintenance work"
+      ],
+      "rightTitle": "Target state",
+      "rightBullets": [
+        "Cloud-native deployment on AWS and IBM Cloud across two regions",
+        "Fully automated CI/CD via GitHub Actions and ArgoCD",
+        "Estimated 70 percent reduction in infrastructure maintenance overhead"
+      ]
+    },
+    {
+      "type": "bullets",
+      "title": "Risks and mitigations",
+      "bullets": [
+        "Data residency concerns for EU customers — mitigated by using EU regions only and adding a residency check in the deployment pipeline",
+        "Legacy database dependencies — mitigated by a phased migration approach that starts with stateless services first",
+        "Skill gap on the team — mitigated by a 12-week training plan and the planned hiring of two cloud engineers"
+      ]
+    },
+    {
+      "type": "closing",
+      "title": "Next steps",
+      "bullets": [
+        "Approve the budget for the three-month discovery phase",
+        "Identify the first three services to migrate by the end of Q4",
+        "Schedule weekly checkpoint meetings with the program sponsor"
+      ]
+    }
+  ]
+}

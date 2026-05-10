@@ -1,0 +1,42 @@
+{
+  "slides": [
+    {
+      "type": "title",
+      "title": "Test from Talentia masters",
+      "subtitle": "Brand-native render check"
+    },
+    {
+      "type": "bullets",
+      "title": "What this proves",
+      "bullets": [
+        "Layouts come from the reference",
+        "Logo/footer/colors inherited",
+        "No hardcoded styling"
+      ]
+    },
+    {
+      "type": "two_column",
+      "title": "Old vs new approach",
+      "leftTitle": "Old",
+      "leftBullets": [
+        "Hardcoded layout",
+        "Painted with extracted colors",
+        "Same look every brand"
+      ],
+      "rightTitle": "New",
+      "rightBullets": [
+        "Inherits brand layouts",
+        "Real master template",
+        "Brand-native"
+      ]
+    },
+    {
+      "type": "closing",
+      "title": "Done",
+      "bullets": [
+        "One reference per brand",
+        "One generated deck per brief"
+      ]
+    }
+  ]
+}

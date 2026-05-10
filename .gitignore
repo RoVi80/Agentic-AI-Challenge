@@ -6,3 +6,8 @@ services/*/node_modules/
 presentation-engine/node_modules/
 presentation-engine/backup/
 presentation-engine/output/
+
+# Generated/test pptx outputs and reference uploads — do not commit client decks
+*.pptx
+*.pdf
+prototype/_logo_b64_tmp.txt
